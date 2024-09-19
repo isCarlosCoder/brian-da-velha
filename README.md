@@ -21,16 +21,6 @@ Brian da Velha é uma versão avançada e divertida do clássico jogo da velha, 
 - CSS3 e Tailwind CSS
 - JavaScript (ES6+)
 
-## Estrutura do Projeto
-
-brian-da-velha/
-│
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-└── index.html
-
 ## Como Jogar
 
 1. Abra o arquivo `index.html` em seu navegador web.
