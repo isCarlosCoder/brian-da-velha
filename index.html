@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian da Velha - By CarlosCoder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="bg-gray-800 rounded-xl shadow-2xl p-8 max-w-md w-full fade-in">
+        <h1 class="text-4xl font-bold text-center mb-6 text-blue-400 animate-pulse">Jogo da Velha Avançado</h1>
+        
+        <div class="mb-6 slide-in">
+            <label for="difficulty" class="block text-sm font-medium text-gray-300 mb-2">Dificuldade:</label>
+            <select id="difficulty" class="w-full p-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white">
+                <option value="0">Super Fácil</option>
+                <option value="1">Fácil</option>
+                <option value="2">Médio</option>
+                <option value="3">Difícil</option>
+                <option value="4">Super Difícil</option>
+                <option value="5">Supremo</option>
+            </select>
+        </div>
+
+        <div class="mb-6 slide-in" style="animation-delay: 0.1s;">
+            <label for="startingPlayer" class="block text-sm font-medium text-gray-300 mb-2">Quem começa:</label>
+            <select id="startingPlayer" class="w-full p-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white">
+                <option value="player">Jogador começa sempre</option>
+                <option value="brian">Brian começa sempre</option>
+                <option value="alternate">Alternar quem começa</option>
+                <option value="random">Aleatório</option>
+            </select>
+        </div>
+
+        <div id="board" class="grid grid-cols-3 gap-2 mb-6">
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+            <button class="cell w-24 h-24 bg-gray-700 text-4xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform hover:scale-105 cell-hover"></button>
+        </div>
+
+        <p id="status" class="text-xl font-semibold text-center mb-4 text-blue-300"></p>
+        
+        <div class="flex justify-center items-center mb-4">
+            <button id="startReset" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Começar</button>
+        </div>
+
+        <div id="score" class="text-center mb-4">
+            <p class="text-lg font-medium text-gray-300">Pontuação:</p>
+            <p class="text-blue-400">Jogador: <span id="playerScore">0</span></p>
+            <p class="text-red-400">Brian: <span id="brianScore">0</span></p>
+            <p class="text-yellow-400">Empates: <span id="drawScore">0</span></p>
+        </div>
+    </div>
+
+    <p class="text-gray-500 mt-4 text-center">
+        Feito por 
+        <a href="https://carloscoder.com.br" class='text-blue-500'>
+            CarlosCoder
+        </a>
+    </p>
+
+    <script src='js/script.js'></script>
+</body>
+</html>
